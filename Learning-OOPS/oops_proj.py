@@ -16,10 +16,10 @@ class chatbot:
                            ''')
         
         if user_input == "1":
-            pass
+            self.signup()
         
         elif user_input == "2":
-            pass
+            self.signin()
         
         elif user_input == "3":
             pass
@@ -33,5 +33,28 @@ class chatbot:
         else:
             exit()
             
+            
+    def signup(self):
+        email = input("Enter your email / / username: ")
+        password = input("Enter your password: ")
+        self.username = email
+        self.password = password
+        print("You have successfully looged in ")
+        print("\n")
+        self.menu()
+    
+    def signin(self):
+        if self.username=='' and self.password=='':
+            print("please sign up first by pressing 1 in the main menu")
+        else:
+            user_name = input("Enter your email / / username here: ")
+            password = input("Enter you password here: ")
+            if self.username == user_name and self.password == password:
+                print("You have successefully signed in")
+                self.loggedin = True
+            else:
+                print("Please enter correct login credentials ")   
+        print("\n")
+        self.menu()        
 
-obj = chatbot()
+obj = chatbot() 
