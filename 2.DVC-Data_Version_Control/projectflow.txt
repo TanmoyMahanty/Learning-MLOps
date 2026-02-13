@@ -10,3 +10,6 @@
 8.Do a git add-commit-push to mark this stage as first version of data.
 9.  Now make changes to dvc_rough.py to append a new row in data, check changes via "dvc status"
 10.Again - - "dvc commit" and then "dvc push"
+11.Then git add-commit-push (we're saving V2 of our data at this point)
+12.Check dvc/git status, everything should be upto date.
+13. Now repeat step 9-11 for v3 of data.
