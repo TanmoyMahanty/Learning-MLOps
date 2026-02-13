@@ -1,4 +1,8 @@
 1.Created a data folder and synthetic data
 2.intialized dvc (pip install dvc)
 3. now we do "dvc init" (creates .dvcignore, .dvc)
-4. now we do "dvc remote add -d myremote s3" 
+4. now we do "dvc remote add -d myremote s3"  
+5.Next "dvc add data/" 
+   Now it will ask to do: ("git rm -r --cached 'data'" and "git commit -m "stop tracking data"")
+   Because initially we were tracking data/ folder from git so now we remove it for DVC to handle.
+6. Again we do "dvc add data/" (creates data.dvc) then "git add .gitignore data.dvc"
