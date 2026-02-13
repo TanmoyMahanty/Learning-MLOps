@@ -1,0 +1,4 @@
+1.Created a data folder and synthetic data
+2.intialized dvc (pip install dvc)
+3. now we do "dvc init" (creates .dvcignore, .dvc)
+4. now we do "dvc remote add -d myremote s3" 
